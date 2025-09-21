@@ -1,0 +1,190 @@
+.intr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        text-align: center;
+        max-width: 55%;
+        padding: 40px 0px;
+
+        line-height: 1.4;
+        font-size: 18px;
+        font-weight: 450;
+    }
+
+    .tittleHome {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+
+            background: linear-gradient(45deg, #8b5cf6, #7c3aed, #6d28d9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .iconeBraces {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+        height: 650px;
+        width: 70%;
+        object-fit: cover;
+    }
+
+}
+
+.containercolocacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+
+    .tittlecard {
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+
+            text-decoration: underline #744EFF 2px;
+            text-underline-offset: 10px;
+
+        }
+
+    }
+
+    .cardspessoas {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 330px;
+            height: 280px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            gap: 8px;
+
+            h3 {
+                margin-top: 25px;
+                font-size: 20px;
+                font-weight: 550;
+                color: #744efff6;
+            }
+
+            p {
+                padding: 5px;
+                font-weight: 600;
+                color: #744effe5;
+            }
+
+            .usuario {
+                padding: 15px 18px;
+                border-radius: 8px;
+                background-color: white;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .progressoPessoa {
+                display: flex;
+                align-items: center;
+                gap: 130px;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 550;
+                }
+
+                p {
+                    color: #6d28d9;
+                    font-weight: 550;
+                }
+
+            }
+
+            progress {
+                width: 75%;
+                height: 10px;
+                border-radius: 10px;
+                border: none;
+                background-color: #e5e7eb;
+
+                &::-webkit-progress-bar {
+                    background-color: #e5e7eb;
+                    border-radius: 10px;
+                }
+
+                &::-webkit-progress-value {
+                    background: linear-gradient(90deg, #8b5cf6, #7c3aed, #6d28d9);
+                    border-radius: 10px;
+                    transition: width 0.4s ease;
+                }
+            }
+
+        }
+
+        .iconWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -25px;
+
+            background: var(--color-button);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            color: white;
+
+            width: 70px;
+            height: 70px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    font-weight: 450;
+
+    .iniciar {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        gap: 10px;
+
+        border-radius: 5px;
+        padding: 12px 40px;
+        background-color: #744EFF;
+
+        a {
+            color: white;
+            font-size: 18px;
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,129 @@
+.containerQuiz {
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+    height: 100vh;
+
+    .fristparte {
+        flex: 1; 
+        min-width: 500px; 
+        max-width: 500px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+
+        p {
+            padding: 20px 0px;
+            font-size: 16px;
+            font-weight: 550;
+            color: #4c1d95; /* Roxo escuro ao invés de preto */
+        }
+
+        h2 {
+            max-width: 480px;
+            font-size: 28px;
+            min-height: 120px;
+            display: flex;
+            align-items: center; 
+        }
+
+        progress {
+            width: 100%;
+            max-width: 90%;
+            margin-top: 10%;
+            height: 12px;
+            border-radius: 10px;
+            border: none;
+            background-color: #e5e7eb;
+            
+            &::-webkit-progress-bar {
+                background-color: #e5e7eb;
+                border-radius: 10px;
+            }
+            
+            &::-webkit-progress-value {
+                background: linear-gradient(90deg, #8b5cf6, #7c3aed, #6d28d9);
+                border-radius: 10px;
+            }
+            
+        }
+    }
+
+.twoparte {
+        min-width: 500px; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+
+        .btsperguntas {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-height: 280px;
+            margin-bottom: 20px;
+
+            .resposta {
+                display: flex;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                background: linear-gradient(135deg, #8b5cf6, #a855f7, #c084fc); 
+                width: 100%;
+                gap: 20px;
+                font-size: 16px;
+                border-radius: 8px;
+                padding: 20px;
+                min-height: 50px;
+                transition: all 0.3s ease;
+                color: white;
+
+                &:hover {
+                    background: linear-gradient(135deg, #7c3aed, #8b5cf6, #a855f7);
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+                }
+
+                &:focus {
+                    outline: 2px solid #6d28d9;
+                    color: white; 
+                    background: linear-gradient(135deg, #6d28d9, #7c3aed, #8b5cf6);
+                }
+            }
+
+            .letraquest {
+                border: none;
+                font-size: 20px;
+                margin-left: 10px;
+                background-color: transparent;
+                color: white;
+                flex-shrink: 0;
+            }
+        }
+
+        .enviar {
+            button {
+                margin-top: 20px;
+                padding: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                width: 100%;
+                border-radius: 8px;
+                cursor: pointer;
+                border: none;
+                color: white;
+                background: linear-gradient(135deg, #8b5cf6, #7c3aed, #6d28d9); /* Gradiente roxo */
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: linear-gradient(135deg, #7c3aed, #6d28d9, #5b21b6);
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+                }
+
+                &:active {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
