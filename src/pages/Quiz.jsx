@@ -162,7 +162,7 @@ export default function Quiz() {
 
                 <div className={style.fristparte}>
 
-                    <p>Questao {indexAtual + 1} de {total}</p>
+                    <p>Questão {indexAtual + 1} de {total}</p>
 
                     <h2>{perguntaAtual.pergunta}</h2>
 
